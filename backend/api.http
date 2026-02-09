@@ -1,0 +1,50 @@
+POST http://localhost:5001/register HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "vaibhav1111",
+  "password": "vibhu111",
+  "email": "vibhuuuu@gmail.com",
+  "name": "vaibhav"
+}
+###
+
+POST http://localhost:5001/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "vibhuuuu@gmail.com",
+  "password": "vibhu111"
+}
+###
+GET http://localhost:5001/get_user_and_profile
+ 
+Content-Type: application/json
+{
+ "token": "f757031320af33238576fa5434ed1758da6b288a86dc74b208992c1c8e05d67bd2f518e3e9fdcaf4902ce3211815bc614320662f4ee9176fb4a04e14adc0a15d"
+}
+###
+POST http://localhost:5001/update_profile_data
+Content-Type: application/json
+
+{
+ "token": "f757031320af33238576fa5434ed1758da6b288a86dc74b208992c1c8e05d67bd2f518e3e9fdcaf4902ce3211815bc614320662f4ee9176fb4a04e14adc0a15d",
+  "bio": "CTO",
+  "currentPost": "CTO",
+  "pastWork": [
+    {
+      "company": "Microsoft",
+      "position": "head",
+      "years": "2+"
+    }
+  ],
+  "education": [
+    {
+      "school": "IIT",
+      "degree": "B.Tech",
+      "fieldOfStudy": "2015-2019"
+    }
+  ]
+}
+###
+GET http://localhost:5001/user/get_all_users HTTP/1.1

@@ -1,0 +1,54 @@
+.container {
+  padding: 1.2em;
+}
+
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.navBar h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.7rem 1.4rem;
+  background: #970886;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.navBar h1:hover {
+  background: #7a066d;
+  transform: translateY(-1px);
+}
+
+
+.navBarOptionContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.buttonjoin {
+  background: #970886;
+  border-radius: 10px;
+  padding-block: 1rem;
+  padding-inline: 1.6rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.buttonjoin:hover {
+  background: #7a066d;
+  transform: translateY(-1px);
+}
